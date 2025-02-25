@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+
+  <!-- link fontawesome -->
+  <script src="https://kit.fontawesome.com/29c3be7601.js" crossorigin="anonymous"></script>
+
+  <!--Css Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- aca link con css -->
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <title>Facha Streetwear</title>
+</head>
+
+<body>
+  <header class="fondoHeader">
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img src="./assets/img/logoReal.png" alt="Logo"  class="me-3">
+      </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarScroll">
+          <ul class="navbar-nav mx-auto me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Tienda
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./pages/tienda.html">Catalogo</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./pages/tienda.html">Jeans</a></li>
+                <li><a class="dropdown-item" href="./pages/tienda.html">Cargos</a></li>
+                <li><a class="dropdown-item" href="./pages/tienda.html">Bermudas Baggy</a></li>
+                <li><a class="dropdown-item" href="./pages/tienda.html">Buzos</a></li>
+                <li><a class="dropdown-item" href="./pages/tienda.html">Camperas</a></li>
+                <li><a class="dropdown-item" href="./pages/tienda.html">Remeras</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/ayuda.html">Ayuda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/envios.html">Envios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/carrito.html"><i class="fas fa-shopping-cart"></i></a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="banner">
+      <h1 id="TituloPag">INICIO</h1>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicadores -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+
+        <!-- Contenido del carrusel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/img/banner.jpg" class="d-block w-100" alt="Slide 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/banner2.jpg" class="d-block w-100" alt="Slide 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/banner.jpg" class="d-block w-100" alt="Slide 3">
+          </div>
+        </div>
+
+        <!-- Botones de navegación -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+
+
+    <section class="categorias">
+      <div class="categorias-contenedor container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-2 g-4">
+          <div class="col">
+            <a href="./pages/tienda.html" class="categoria-item d-block">
+              <img src="./assets/img/ropaimg/Jeans-negros-desgastados.png" alt="Jeans Negros"
+                class="categoria-imagen" />
+              <span class="categoria-texto">JEANS</span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="./pages/tienda.html" class="categoria-item d-block">
+              <img src="./assets/img/ropaimg/Deportivo-negro-scarryjpg.jpg" alt="Deportivo Negro"
+                class="categoria-imagen" />
+              <span class="categoria-texto">CARGOS</span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="./pages/tienda.html" class="categoria-item d-block">
+              <img src="./assets/img/ropaimg/SHORT-BAGGY-AZUL.jpg" alt="Short Baggy Azul" class="categoria-imagen" />
+              <span class="categoria-texto">BERMUDAS BAGGY</span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="./pages/tienda.html" class="categoria-item d-block">
+              <img src="./assets/img/ropaimg/Canguro-Nergo-Jean.jpg" alt="Canguro Negro Jean"
+                class="categoria-imagen" />
+              <span class="categoria-texto">BUZOS</span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="./pages/tienda.html" class="categoria-item d-block">
+              <img src="./assets/img/ropaimg/ROMPEVIENTOS-ANORAK-VIOLETA.jpg" alt="Rompevientos Anorak Violeta"
+                class="categoria-imagen" />
+              <span class="categoria-texto">CAMPERAS</span>
+            </a>
+          </div>
+          <div class="col">
+            <a href="./pages/tienda.html" class="categoria-item d-block">
+              <img src="./assets/img/ropaimg/REMERA-NERGOjpg.jpg" alt="Remera Negra" class="categoria-imagen" />
+              <span class="categoria-texto">REMERAS</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="carouseles">
+      <div class="container">
+        <h2>Lo que te Recomendamos:</h2>
+        <div class="recomendados-carousel">
+          <div id="productCarousel1" class="carousel slide" data-bs-ride="carousel">
+            <!-- Botones de navegación -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#productCarousel1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+
+            <!-- Contenido del carrusel -->
+            <div class="carousel-inner">
+              <!-- Primer grupo de productos (4 productos) -->
+              <div class="carousel-item active">
+                <div class="row">
+                  <!-- Producto 1 -->
+                  <div class="col-md-3 col-6">
+                    <a href="./pages/tienda.html">
+                    <div class="card h-100">
+                      <img src="./assets/img/ropaimg/Jeans-negros-desgastados.png" class="card-img-top"
+                        alt="Jeans Negros">
+                      <div class="card-body">
+                        <h5 class="card-title">Camadro Jean Facho FO</h5>
+                        <p class="card-text">El Drop de tus Sueños</p>
+                        <p class="card-text">$2,690.00</p>
+                        <div class="sizes">
+                          <span class="size">S</span>
+                          <span class="size">M</span>
+                          <span class="size unavailable">L</span>
+                          <span class="size">XL</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <!-- Producto 2 -->
+                  <div class="col-md-3 col-6">
+                    <a href="./pages/tienda.html">
+                    <div class="card h-100">
+                      <img src="./assets/img/ropaimg/Deportivo-negro-scarryjpg.jpg" class="card-img-top"
+                        alt="Deportivo Negro">
+                      <div class="card-body">
+                        <h5 class="card-title">Oxford Jean</h5>
+                        <p class="card-text">El Drop de tus Sueños</p>
+                        <p class="card-text">$2,390.00</p>
+                        <div class="sizes">
+                          <span class="size">S</span>
+                          <span class="size">M</span>
+                          <span class="size">L</span>
+                          <span class="size unavailable">XL</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <!-- Producto 3 -->
+                  <div class="col-md-3 col-6">
+                    <a href="./pages/tienda.html">
+                    <div class="card h-100">
+                      <img src="./assets/img/ropaimg/SHORT-BAGGY-AZUL.jpg" class="card-img-top" alt="Short Baggy Azul">
+                      <div class="card-body">
+                        <h5 class="card-title">Drafting Jean</h5>
+                        <p class="card-text">El Drop de tus Sueños</p>
+                        <p class="card-text">$2,390.00</p>
+                        <div class="sizes">
+                          <span class="size">M</span>
+                          <span class="size">L</span>
+                          <span class="size">XL</span>
+                          <span class="size unavailable">2XL</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <!-- Producto 4 -->
+                  <div class="col-md-3 col-6">
+                    <a href="./pages/tienda.html">
+                    <div class="card h-100">
+                      <img src="./assets/img/ropaimg/Canguro-Nergo-Jean.jpg" class="card-img-top"
+                        alt="Canguro Negro Jean">
+                      <div class="card-body">
+                        <h5 class="card-title">Canguro Negro Jean</h5>
+                        <p class="card-text">El Drop de tus Sueños</p>
+                        <p class="card-text">$2,390.00</p>
+                        <div class="sizes">
+                          <span class="size">S</span>
+                          <span class="size">M</span>
+                          <span class="size">L</span>
+                          <span class="size">XL</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Segundo grupo de productos (si tienes más de 4 productos) -->
+              <div class="carousel-item">
+                <div class="row">
+                  <!-- Producto 1 -->
+                  <div class="col-md-3 col-6">
+                    <a href="./pages/tienda.html">
+                    <div class="card h-100">
+                      <img src="./assets/img/ropaimg/Jeans-negros-desgastados.png" class="card-img-top"
+                        alt="Jeans Negros">
+                      <div class="card-body">
+                        <h5 class="card-title">Camadro Jean Facho FO</h5>
+                        <p class="card-text">El Drop de tus Sueños</p>
+                        <p class="card-text">$2,690.00</p>
+                        <div class="sizes">
+                          <span class="size">S</span>
+                          <span class="size">M</span>
+                          <span class="size unavailable">L</span>
+                          <span class="size">XL</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <!-- Producto 2 -->
+                  <div class="col-md-3 col-6">
+                    <a href="./pages/tienda.html">
+                    <div class="card h-100">
+                      <img src="./assets/img/ropaimg/Deportivo-negro-scarryjpg.jpg" class="card-img-top"
+                        alt="Deportivo Negro">
+                      <div class="card-body">
+                        <h5 class="card-title">Oxford Jean</h5>
+                        <p class="card-text">El Drop de tus Sueños</p>
+                        <p class="card-text">$2,390.00</p>
+                        <div class="sizes">
+                          <span class="size">S</span>
+                          <span class="size">M</span>
+                          <span class="size">L</span>
+                          <span class="size unavailable">XL</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <!-- Producto 3 -->
+                  <div class="col-md-3 col-6">
+                    <a href="./pages/tienda.html">
+                    <div class="card h-100">
+                      <img src="./assets/img/ropaimg/SHORT-BAGGY-AZUL.jpg" class="card-img-top" alt="Short Baggy Azul">
+                      <div class="card-body">
+                        <h5 class="card-title">Drafting Jean</h5>
+                        <p class="card-text">El Drop de tus Sueños</p>
+                        <p class="card-text">$2,390.00</p>
+                        <div class="sizes">
+                          <span class="size">M</span>
+                          <span class="size">L</span>
+                          <span class="size">XL</span>
+                          <span class="size unavailable">2XL</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <!-- Producto 4 -->
+                  <div class="col-md-3 col-6">
+                    <a href="./pages/tienda.html">
+                    <div class="card h-100">
+                      <img src="./assets/img/ropaimg/Canguro-Nergo-Jean.jpg" class="card-img-top"
+                        alt="Canguro Negro Jean">
+                      <div class="card-body">
+                        <h5 class="card-title">Canguro Negro Jean</h5>
+                        <p class="card-text">El Drop de tus Sueños</p>
+                        <p class="card-text">$2,390.00</p>
+                        <div class="sizes">
+                          <span class="size">S</span>
+                          <span class="size">M</span>
+                          <span class="size">L</span>
+                          <span class="size">XL</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <h2>Destacados:</h2>
+        <div class="recomendados-carousel">
+          <div id="productCarousel2" class="carousel slide" data-bs-ride="carousel">
+            <!-- Botones de navegación -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel2" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#productCarousel2" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+
+            <!-- Contenido del carrusel -->
+            <div class="carousel-inner">
+              <!-- Primer grupo de productos (4 productos) -->
+              <div class="carousel-item active">
+                <div class="row">
+                  <!-- Producto 1 -->
+                  <div class="col-md-3 col-6">
+                    <a href="./pages/tienda.html">
+                    <div class="card h-100">
+                      <img src="./assets/img/ropaimg/Jeans-negros-desgastados.png" class="card-img-top"
+                        alt="Jeans Negros">
+                      <div class="card-body">
+                        <h5 class="card-title">Camadro Jean Facho FO</h5>
+                        <p class="card-text">El Drop de tus Sueños</p>
+                        <p class="card-text">$2,690.00</p>
+                        <div class="sizes">
+                          <span class="size">S</span>
+                          <span class="size">M</span>
+                          <span class="size unavailable">L</span>
+                          <span class="size">XL</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <!-- Producto 2 -->
+                  <div class="col-md-3 col-6">
+                    <a href="./pages/tienda.html">
+                    <div class="card h-100">
+                      <img src="./assets/img/ropaimg/Deportivo-negro-scarryjpg.jpg" class="card-img-top"
+                        alt="Deportivo Negro">
+                      <div class="card-body">
+                        <h5 class="card-title">Oxford Jean</h5>
+                        <p class="card-text">El Drop de tus Sueños</p>
+                        <p class="card-text">$2,390.00</p>
+                        <div class="sizes">
+                          <span class="size">S</span>
+                          <span class="size">M</span>
+                          <span class="size">L</span>
+                          <span class="size unavailable">XL</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <!-- Producto 3 -->
+                  <div class="col-md-3 col-6">
+                    <a href="./pages/tienda.html">
+                    <div class="card h-100">
+                      <img src="./assets/img/ropaimg/SHORT-BAGGY-AZUL.jpg" class="card-img-top" alt="Short Baggy Azul">
+                      <div class="card-body">
+                        <h5 class="card-title">Drafting Jean</h5>
+                        <p class="card-text">El Drop de tus Sueños</p>
+                        <p class="card-text">$2,390.00</p>
+                        <div class="sizes">
+                          <span class="size">M</span>
+                          <span class="size">L</span>
+                          <span class="size">XL</span>
+                          <span class="size unavailable">2XL</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <!-- Producto 4 -->
+                  <div class="col-md-3 col-6">
+                    <a href="./pages/tienda.html">
+                    <div class="card h-100">
+                      <img src="./assets/img/ropaimg/Canguro-Nergo-Jean.jpg" class="card-img-top"
+                        alt="Canguro Negro Jean">
+                      <div class="card-body">
+                        <h5 class="card-title">Canguro Negro Jean</h5>
+                        <p class="card-text">El Drop de tus Sueños</p>
+                        <p class="card-text">$2,390.00</p>
+                        <div class="sizes">
+                          <span class="size">S</span>
+                          <span class="size">M</span>
+                          <span class="size">L</span>
+                          <span class="size">XL</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Segundo grupo de productos (si tienes más de 4 productos) -->
+              <div class="carousel-item">
+                <div class="row">
+                  <!-- Producto 1 -->
+                  <div class="col-md-3 col-6">
+                    <a href="./pages/tienda.html">
+                    <div class="card h-100">
+                      <img src="./assets/img/ropaimg/Jeans-negros-desgastados.png" class="card-img-top"
+                        alt="Jeans Negros">
+                      <div class="card-body">
+                        <h5 class="card-title">Camadro Jean Facho FO</h5>
+                        <p class="card-text">El Drop de tus Sueños</p>
+                        <p class="card-text">$2,690.00</p>
+                        <div class="sizes">
+                          <span class="size">S</span>
+                          <span class="size">M</span>
+                          <span class="size unavailable">L</span>
+                          <span class="size">XL</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <!-- Producto 2 -->
+                  <div class="col-md-3 col-6">
+                    <a href="./pages/tienda.html">
+                    <div class="card h-100">
+                      <img src="./assets/img/ropaimg/Deportivo-negro-scarryjpg.jpg" class="card-img-top"
+                        alt="Deportivo Negro">
+                      <div class="card-body">
+                        <h5 class="card-title">Oxford Jean</h5>
+                        <p class="card-text">El Drop de tus Sueños</p>
+                        <p class="card-text">$2,390.00</p>
+                        <div class="sizes">
+                          <span class="size">S</span>
+                          <span class="size">M</span>
+                          <span class="size">L</span>
+                          <span class="size unavailable">XL</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <!-- Producto 3 -->
+                  <div class="col-md-3 col-6">
+                    <a href="./pages/tienda.html">
+                    <div class="card h-100">
+                      <img src="./assets/img/ropaimg/SHORT-BAGGY-AZUL.jpg" class="card-img-top" alt="Short Baggy Azul">
+                      <div class="card-body">
+                        <h5 class="card-title">Drafting Jean</h5>
+                        <p class="card-text">El Drop de tus Sueños</p>
+                        <p class="card-text">$2,390.00</p>
+                        <div class="sizes">
+                          <span class="size">M</span>
+                          <span class="size">L</span>
+                          <span class="size">XL</span>
+                          <span class="size unavailable">2XL</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                  <!-- Producto 4 -->
+                  <div class="col-md-3 col-6">
+                    <a href="./pages/tienda.html">
+                    <div class="card h-100">
+                      <img src="./assets/img/ropaimg/Canguro-Nergo-Jean.jpg" class="card-img-top"
+                        alt="Canguro Negro Jean">
+                      <div class="card-body">
+                        <h5 class="card-title">Canguro Negro Jean</h5>
+                        <p class="card-text">El Drop de tus Sueños</p>
+                        <p class="card-text">$2,390.00</p>
+                        <div class="sizes">
+                          <span class="size">S</span>
+                          <span class="size">M</span>
+                          <span class="size">L</span>
+                          <span class="size">XL</span>
+                        </div>
+                      </div>
+                    </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <div class="container footerDiv">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-body-secondary">© 2024 CaetanoSA, Inc</p>
+  
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <img class="bi me-2" width="150" height="80" src="./assets/img/logoReal.png" alt="logoReal"></img>
+      </a>
+  
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="./index.html" class="nav-link px-2 text-body-secondary">Inicio</a></li>
+        <li class="nav-item"><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook nav-link px-2 text-body-secondary"></i></a></li>
+        <li class="nav-item"><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram nav-link px-2 text-body-secondary"></i></a></li>
+        <li class="nav-item"><a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter nav-link px-2 text-body-secondary"></i></a></li>
+      </ul>
+    </footer>
+  </div>
+
+
+  <!--Script Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,508 @@
+
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Sedgwick+Ave+Display&display=swap');
+
+/* Estilos generales */
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  
+    background-color: #FFFFFF;
+    color: black;
+    font-family: "Karla", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+ul {
+    list-style: none; 
+}
+
+a {
+    color: black; 
+    text-decoration: none; 
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none; 
+}
+
+/* Títulos */
+h1 {
+    font-family: "Rock Salt", serif;
+    font-weight: 400;
+}
+
+h2 {
+    color: #333;
+}
+
+
+header {
+    padding: 0;
+    margin: 0;
+}
+
+
+.fondoHeader {
+    background-color: #f5f5f5;
+    padding: 0;
+}
+
+body {
+    padding-top: 85px; 
+}
+
+.navbar.fixed-top {
+    width: 100%;
+    top: 0;
+    z-index: 1030;
+}
+
+header a img {
+    max-width: 175px;
+    height: 85px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #f0a500;
+}
+
+
+
+
+/* Estilos para el banner */
+.banner {
+    height: 60vh; 
+    position: relative; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilos para el título */
+  #TituloPag {
+    position: absolute; 
+    top: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 10; 
+    color: white; 
+    font-size: 2.5rem; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  }
+  
+
+
+
+
+
+  /* Estilos para el carrusel */
+  .carousel {
+    width: 100%;
+    height: 100%; 
+    position: relative; 
+  }
+  
+  .carousel-inner {
+    height: 100%; 
+  }
+  
+  .carousel-item {
+    height: 100%; 
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center; 
+  }
+  
+  /* Estilos para los botones de navegación */
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    width: 40px; 
+    height: 40px; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    border: none; 
+    border-radius: 50%; 
+    z-index: 20; 
+  }
+  
+  .carousel-control-prev {
+    left: 10px; 
+  }
+  
+  .carousel-control-next {
+    right: 10px; 
+  }
+  
+
+
+/* Flexbox para la sección de categorías */
+
+.categorias {
+    margin-bottom: 50px;
+}
+
+.categorias-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.categoria-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.categoria-item:hover {
+    transform: scale(1.05);
+}
+
+.categoria-item a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10; /* Asegura que esté por encima */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categoria-imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.categoria-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem; 
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+    font-family: "Rock Salt", serif;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+.carouseles {
+    margin-bottom: 50px;
+}
+
+/* Estilos específicos para los botones de la sección "Recomendados" */
+.recomendados-carousel .carousel-control-prev,
+.recomendados-carousel .carousel-control-next {
+  width: 5%; 
+  border: none; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  background-color: #FFFFFF; 
+}
+
+/* Posición del botón "anterior" */
+.recomendados-carousel .carousel-control-prev {
+  left: -5%; 
+}
+
+/* Posición del botón "siguiente" */
+.recomendados-carousel .carousel-control-next {
+  right: -5%; 
+}
+
+/* Estilo del ícono de los botones */
+.recomendados-carousel .carousel-control-prev-icon,
+.recomendados-carousel .carousel-control-next-icon {
+  filter: invert(1); 
+}
+
+
+.unavailable {
+    text-decoration: line-through;
+    color: #ccc;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+  }
+
+  .card-title, .card-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.recomendados {
+    display: flex;
+    flex-direction: row; 
+    gap: 15px;
+    justify-content: center; 
+}
+
+.recomendados .recomendado-item {
+    display: block;
+}
+
+.recomendados .categoria-imagen {
+    width: 200px;  
+    height: 300px; 
+    object-fit: cover; 
+    transition: transform 0.3s ease; 
+}
+
+.recomendados .recomendado-item:hover .categoria-imagen {
+    transform: scale(1.1); 
+}
+
+/* Footer */
+
+.footerDiv {
+    text-align: unset;
+    background-color: rgb(53, 55, 50);
+    padding: 5px 0;
+}
+.fondoFooter {
+    background-color: rgb(88, 91, 83);
+    padding: 5px 0;
+}
+
+.fondoFooter .redesSociales a {
+    color: white; 
+    font-size: 18px; 
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.fondoFooter .redesSociales a:hover {
+    color: #888888; 
+}
+
+footer .copy, .textCenter {
+    text-align: center;
+}
+
+footer .contactoFooter {
+    text-align: right; 
+    padding-right: 10px;
+}
+
+
+
+
+
+
+
+/* Estilo del sidebar */
+.sidebar {
+    justify-content:start;
+    width: 250px;
+    background-color: #f3f4f6;
+    padding: 20px;
+    height: 100vh;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column; 
+    align-items: stretch; 
+}
+
+/* Asegurar que el título esté separado */
+.sidebar h2 {
+    margin-bottom: 15px; 
+    text-align: left; 
+}
+
+/* Contenedor del menú */
+.menu {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    width: 100%;
+}
+
+/* Estilo de los enlaces del menú */
+.menu a {
+    display: block;
+    text-decoration: none;
+    padding: 12px 20px;
+    color: #333;
+    background-color: #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+/* Hover */
+.menu a:hover {
+    background-color: #1abc9c;
+    color: white;
+}
+
+
+/* Estilo del contenido principal */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Estilos aplicados solo en ayuda */
+.encabezadoContacto, .encabezadoContacto2 {
+    text-align: center;
+}
+
+.encabezadoContacto2 {
+    color: rgba(11, 17, 12, 0.721);
+    background-color: rgb(170, 180, 166);    
+}
+
+.direccion span {
+    font-weight: 700;
+    color: rgb(47, 24, 140);
+}
+
+/* Estilos aplicados solo en envíos */
+.mapa-section {
+    display: flex;
+    justify-content: center; 
+    padding: 20px;
+}
+
+.mapa-contenedor {
+    width: 80%; 
+    max-width: 1000px;
+}
+
+.mapa {
+    width: 100%; 
+    height: 500px; 
+    border: 0;
+    border-radius: 8px; 
+}
+
+
+/* Estilos aplicados solo en carrito */
+.linea {
+    border: 0;
+    height: 2px;
+    background-color: #333;
+    margin: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+
+@media (max-width: 576px) {
+    .categoria-texto {
+        font-size: 1rem;
+        padding: 3px 8px;
+    }
+
+    .categoria-imagen {
+        height: 120px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .categoria-texto {
+        font-size: 1.1rem;
+    }
+
+    .categoria-imagen {
+        height: 140px;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        border-top: 1px solid #ddd;
+        padding: 15px;
+        order: 100; /* Se coloca al final */
+    }
+    
+    /* Asegurar que el menú sigue funcionando bien */
+    .menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .menu a {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .categoria-item {
+        height: 250px; 
+    }
+
+    .categoria-imagen {
+        object-fit: cover;
+    }
+
+    .categoria-texto {
+        font-size: 1.3rem;
+        padding: 10px 15px;
+    }
+}
