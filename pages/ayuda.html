@@ -25,8 +25,8 @@
     <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="../index.html">
-          <img src="../assets/img/logoReal.png" alt="Logo"  class="me-3">
-      </a>
+          <img src="../assets/img/logoReal.png" alt="Logo" class="me-3">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
           aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -74,61 +74,64 @@
     </nav>
   </header>
 
-  <main>
-
-    <h1 class="encabezadoContacto">SOPORTE</h1>
-    <h2 class="encabezadoContacto2">Dejanos tus comentarios o dudas</h2>
+  <main class="container py-4 form-color">
+    <h1 class="text-center mt-3">SOPORTE</h1>
+    <h2 class="text-center mb-4">Déjanos tus comentarios o dudas</h2>
 
     <form action="">
-      <fieldset>
-        <div>
-          <label for="nombre">Dinos tu nombre</label>
-          <input type="text" name="nombre" id="nombre" placeholder="Nombre Completo" />
+      <fieldset class="border p-4 rounded">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Dinos tu nombre</label>
+          <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre Completo" />
         </div>
-        <div>
-          <label for="email">¿Cuál es tu email?</label>
-          <input type="email" name="email" id="email" placeholder="correo@correo.com" required />
+        <div class="mb-3">
+          <label for="email" class="form-label">¿Cuál es tu email?</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="correo@correo.com" required />
         </div>
-        <div>
-          <label for="asunto">¿De qué se trata?</label>
-          <input type="text" name="asunto" id="asunto" placeholder="Asunto" />
+        <div class="mb-3">
+          <label for="asunto" class="form-label">¿De qué se trata?</label>
+          <input type="text" name="asunto" id="asunto" class="form-control" placeholder="Asunto" />
         </div>
-        <div>
-          <label for="mensaje">Tu mensaje</label>
-          <textarea name="mensaje" id="mensaje" placeholder="Escribe tu mensaje aquí" rows="5" required></textarea>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Tu mensaje</label>
+          <textarea name="mensaje" id="mensaje" class="form-control" placeholder="Escribe tu mensaje aquí" rows="5"
+            required></textarea>
         </div>
-        <input type="submit" value="Enviar mensaje" />
+        <button type="submit" class="btn btn-primary w-100">Enviar mensaje</button>
       </fieldset>
     </form>
-
 
   </main>
 
 
-  
+
   <div class="container footerDiv">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-      <p class="col-md-4 mb-0 text-body-secondary">© 2024 CaetanoSA, Inc</p>
-  
-      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <p class="col-md-4 mb-0 text-body-secondary">© 2025 CaetanoSA, Inc</p>
+
+      <a href="/"
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
         <img class="bi me-2" width="150" height="80" src="../assets/img/logoReal.png" alt="logoReal"></img>
       </a>
-  
+
       <ul class="nav col-md-4 justify-content-end">
         <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-body-secondary">Inicio</a></li>
-        <li class="nav-item"><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook nav-link px-2 text-body-secondary"></i></a></li>
-        <li class="nav-item"><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram nav-link px-2 text-body-secondary"></i></a></li>
-        <li class="nav-item"><a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter nav-link px-2 text-body-secondary"></i></a></li>
+        <li class="nav-item"><a href="https://www.facebook.com/" target="_blank"><i
+              class="fa-brands fa-facebook nav-link px-2 text-body-secondary"></i></a></li>
+        <li class="nav-item"><a href="https://www.instagram.com/" target="_blank"><i
+              class="fa-brands fa-instagram nav-link px-2 text-body-secondary"></i></a></li>
+        <li class="nav-item"><a href="https://twitter.com" target="_blank"><i
+              class="fa-brands fa-x-twitter nav-link px-2 text-body-secondary"></i></a></li>
       </ul>
     </footer>
   </div>
 
 
 
- <!--Script Bootstrap-->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
- integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
- crossorigin="anonymous"></script>
+  <!--Script Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 
 

@@ -1,4 +1,3 @@
-
 /* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Sedgwick+Ave+Display&display=swap');
 
@@ -9,7 +8,7 @@ html {
 }
 
 body {
-  
+
     background-color: #FFFFFF;
     color: black;
     font-family: "Karla", serif;
@@ -19,17 +18,17 @@ body {
 
 
 ul {
-    list-style: none; 
+    list-style: none;
 }
 
 a {
-    color: black; 
-    text-decoration: none; 
+    color: black;
+    text-decoration: none;
     font-size: 18px;
 }
 
 a {
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 /* Títulos */
@@ -55,7 +54,7 @@ header {
 }
 
 body {
-    padding-top: 85px; 
+    padding-top: 85px;
 }
 
 .navbar.fixed-top {
@@ -93,75 +92,60 @@ nav ul li a:hover {
 
 /* Estilos para el banner */
 .banner {
-    height: 60vh; 
-    position: relative; 
-    overflow: hidden; 
+    height: 60vh;
+    position: relative;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  /* Estilos para el título */
-  #TituloPag {
-    position: absolute; 
-    top: 20px; 
-    left: 50%; 
-    transform: translateX(-50%); 
-    z-index: 10; 
-    color: white; 
-    font-size: 2.5rem; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-  }
-  
+}
 
 
 
-
-
-  /* Estilos para el carrusel */
-  .carousel {
-    width: 100%;
-    height: 100%; 
-    position: relative; 
-  }
-  
-  .carousel-inner {
-    height: 100%; 
-  }
-  
-  .carousel-item {
-    height: 100%; 
-  }
-  
-  .carousel-item img {
+/* Estilos para el carrusel */
+.carousel {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
-    object-position: center; 
-  }
-  
-  /* Estilos para los botones de navegación */
-  .carousel-control-prev,
-  .carousel-control-next {
-    position: absolute; 
-    top: 50%; 
-    transform: translateY(-50%); 
-    width: 40px; 
-    height: 40px; 
-    background-color: rgba(0, 0, 0, 0.5); 
-    border: none; 
-    border-radius: 50%; 
-    z-index: 20; 
-  }
-  
-  .carousel-control-prev {
-    left: 10px; 
-  }
-  
-  .carousel-control-next {
-    right: 10px; 
-  }
-  
+    position: relative;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Estilos para los botones de navegación */
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 50%;
+    z-index: 20;
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
 
 
 /* Flexbox para la sección de categorías */
@@ -197,7 +181,8 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 10; /* Asegura que esté por encima */
+    z-index: 10;
+    /* Asegura que esté por encima */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,7 +201,7 @@ nav ul li a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1.2rem; 
+    font-size: 1.2rem;
     font-weight: bold;
     color: white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
@@ -226,11 +211,6 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-
-
-
-
-
 .carouseles {
     margin-bottom: 50px;
 }
@@ -238,52 +218,53 @@ nav ul li a:hover {
 /* Estilos específicos para los botones de la sección "Recomendados" */
 .recomendados-carousel .carousel-control-prev,
 .recomendados-carousel .carousel-control-next {
-  width: 5%; 
-  border: none; 
-  top: 50%; 
-  transform: translateY(-50%); 
-  background-color: #FFFFFF; 
+    width: 5%;
+    border: none;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #FFFFFF;
 }
 
 /* Posición del botón "anterior" */
 .recomendados-carousel .carousel-control-prev {
-  left: -5%; 
+    left: -5%;
 }
 
 /* Posición del botón "siguiente" */
 .recomendados-carousel .carousel-control-next {
-  right: -5%; 
+    right: -5%;
 }
 
 /* Estilo del ícono de los botones */
 .recomendados-carousel .carousel-control-prev-icon,
 .recomendados-carousel .carousel-control-next-icon {
-  filter: invert(1); 
+    filter: invert(1);
 }
 
 
 .unavailable {
     text-decoration: line-through;
     color: #ccc;
-  }
+}
 
-  .card-img-top {
+.card-img-top {
     width: 100%;
-    height: 200px; 
-    object-fit: cover; 
-  }
+    height: 200px;
+    object-fit: cover;
+}
 
-  .card-title, .card-text {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.card-title,
+.card-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .recomendados {
     display: flex;
-    flex-direction: row; 
+    flex-direction: row;
     gap: 15px;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .recomendados .recomendado-item {
@@ -291,14 +272,14 @@ nav ul li a:hover {
 }
 
 .recomendados .categoria-imagen {
-    width: 200px;  
-    height: 300px; 
-    object-fit: cover; 
-    transition: transform 0.3s ease; 
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
 .recomendados .recomendado-item:hover .categoria-imagen {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 /* Footer */
@@ -308,66 +289,63 @@ nav ul li a:hover {
     background-color: rgb(53, 55, 50);
     padding: 5px 0;
 }
+
 .fondoFooter {
     background-color: rgb(88, 91, 83);
     padding: 5px 0;
 }
 
 .fondoFooter .redesSociales a {
-    color: white; 
-    font-size: 18px; 
+    color: white;
+    font-size: 18px;
     font-weight: 500;
     text-decoration: none;
     margin: 0 10px;
 }
 
 .fondoFooter .redesSociales a:hover {
-    color: #888888; 
+    color: #888888;
 }
 
-footer .copy, .textCenter {
+footer .copy,
+.textCenter {
     text-align: center;
 }
 
 footer .contactoFooter {
-    text-align: right; 
+    text-align: right;
     padding-right: 10px;
 }
 
 
-
-
-
-
-
 /* Estilo del sidebar */
 .sidebar {
-    justify-content:start;
+    justify-content: start;
     width: 250px;
     background-color: #f3f4f6;
     padding: 20px;
     height: 100vh;
     border-right: 1px solid #ddd;
     display: flex;
-    flex-direction: column; 
-    align-items: stretch; 
+    flex-direction: column;
+    align-items: stretch;
 }
 
 /* Asegurar que el título esté separado */
 .sidebar h2 {
-    margin-bottom: 15px; 
-    text-align: left; 
+    margin-bottom: 15px;
+    text-align: left;
 }
 
 /* Contenedor del menú */
 .menu {
     display: flex;
-    flex-direction: column; 
-    gap: 10px; 
+    flex-direction: column;
+    gap: 10px;
     width: 100%;
 }
 
-/* Estilo de los enlaces del menú */
+/* Estilo de los enlaces del menú en tienda */
 .menu a {
     display: block;
     text-decoration: none;
@@ -376,8 +354,8 @@ footer .contactoFooter {
     background-color: #ddd;
     border-radius: 5px;
     transition: background-color 0.3s;
-    width: 100%; 
-    box-sizing: border-box; 
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Hover */
@@ -393,40 +371,24 @@ main {
     padding: 20px;
 }
 
-/* Estilos aplicados solo en ayuda */
-.encabezadoContacto, .encabezadoContacto2 {
-    text-align: center;
-}
-
-.encabezadoContacto2 {
-    color: rgba(11, 17, 12, 0.721);
-    background-color: rgb(170, 180, 166);    
-}
-
-.direccion span {
-    font-weight: 700;
-    color: rgb(47, 24, 140);
-}
-
 /* Estilos aplicados solo en envíos */
 .mapa-section {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     padding: 20px;
 }
 
 .mapa-contenedor {
-    width: 80%; 
+    width: 80%;
     max-width: 1000px;
 }
 
 .mapa {
-    width: 100%; 
-    height: 500px; 
+    width: 100%;
+    height: 500px;
     border: 0;
-    border-radius: 8px; 
+    border-radius: 8px;
 }
-
 
 /* Estilos aplicados solo en carrito */
 .linea {
@@ -445,20 +407,34 @@ main {
     text-align: center;
 }
 
+/*Form Ayuda estilo*/
+
+.form-color {
+    background-color: #e3e3e3;
+}
+
 
 
 @media (max-width: 576px) {
+
     .categoria-texto {
         font-size: 1rem;
         padding: 3px 8px;
     }
 
     .categoria-imagen {
-        height: 120px; 
+        height: 120px;
     }
 }
 
 @media (max-width: 768px) {
+
+    .banner .carousel-item img {
+        width: 100vw;
+        height: 60vh;
+        object-fit: cover;
+    }
+
     .categoria-texto {
         font-size: 1.1rem;
     }
@@ -474,9 +450,10 @@ main {
         border-right: none;
         border-top: 1px solid #ddd;
         padding: 15px;
-        order: 100; /* Se coloca al final */
+        order: 100;
+        /* Se coloca al final */
     }
-    
+
     /* Asegurar que el menú sigue funcionando bien */
     .menu {
         flex-direction: row;
@@ -494,7 +471,7 @@ main {
 
 @media (min-width: 1200px) {
     .categoria-item {
-        height: 250px; 
+        height: 250px;
     }
 
     .categoria-imagen {
