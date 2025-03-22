@@ -1,0 +1,17 @@
+@use 'variables' as *;
+
+.footerDiv {
+    padding: 5px 0;
+    text-align: unset;
+}
+
+
+footer .copy,
+.textCenter {
+    text-align: center;
+}
+
+footer .contactoFooter {
+    text-align: right;
+    padding-right: 10px;
+}

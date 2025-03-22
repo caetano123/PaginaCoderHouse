@@ -1,0 +1,253 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'header' as *;
+@use 'footer' as *;
+@use 'categorias' as *;
+@use 'mediaqueries' as *;
+
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Sedgwick+Ave+Display&display=swap');
+
+
+
+/* Estilos generales */
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $background-color;
+    color: $primary-color;
+    font-family: $font-primary;
+    font-weight: 500;
+    font-style: normal;
+    padding-top: 85px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+    font-size: 18px;
+
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
+/* Títulos */
+h1 {
+    font-family: $font-titles;
+    font-weight: 400;
+}
+
+h2 {
+    color: $dark-color;
+}
+
+/* Estilos para el banner */
+.banner {
+    @include flex-center;
+    height: 60vh;
+    position: relative;
+    overflow: hidden;
+
+    /* Estilos para el carrusel */
+    .carousel {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        .carousel-inner {
+            height: 100%;
+        }
+
+        .carousel-item {
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+        /* Estilos para los botones de navegación */
+        .carousel-control-prev,
+        .carousel-control-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background-color: $primary-color;
+            border: none;
+            border-radius: 50%;
+            z-index: 20;
+
+            &.carousel-control-prev {
+                left: 10px;
+            }
+
+            &.carousel-control-next {
+                right: 10px;
+            }
+        }
+    }
+}
+
+
+/* Margen inferior para carouseles */
+.carouseles {
+    margin-bottom: 50px;
+}
+
+// Estilos generales para el carrusel "Recomendados"
+.recomendados-carousel {
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 5%;
+        border: none;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $background-color;
+    }
+
+    .carousel-control-prev {
+        left: -5%;
+    }
+
+    .carousel-control-next {
+        right: -5%;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        filter: invert(1);
+    }
+}
+
+// Estilo para los elementos no disponibles
+.unavailable {
+    text-decoration: line-through;
+    color: $unavailable-color;
+}
+
+// Estilo para las imágenes de los productos
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+// Estilo para el título y el texto de las tarjetas
+.card-title,
+.card-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/*Carrito*/
+
+.linea {
+    border: 0;
+    height: 2px;
+    background-color: $dark-color;
+    margin: 20px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: $background-color;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/*Form Ayuda estilo*/
+
+.form-color {
+    background-color: $background-color;
+}
+
+/* Estilos aplicados solo en envíos */
+.mapa-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+    .mapa-contenedor {
+        width: 80%;
+        max-width: 1000px;
+
+        .mapa {
+            width: 100%;
+            height: 500px;
+            border: 0;
+            border-radius: 8px;
+        }
+    }
+}
+
+.container {
+    .row {
+        .col-md-3 {
+            .sidebar {
+                justify-content: start;
+                width: 250px;
+                background-color: $background-color;
+                padding: 20px;
+                height: 100vh;
+                border-right: 1px solid $background-color;
+                display: flex;
+                flex-direction: column;
+                align-items: stretch;
+
+                h2 {
+                    margin-bottom: 15px;
+                    text-align: left;
+                }
+
+                .menu {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    width: 100%;
+
+                    a {
+                        display: block;
+                        text-decoration: none;
+                        padding: 12px 20px;
+                        color: $dark-color;
+                        background-color:#e0e0e0;
+                        border-radius: 5px;
+                        transition: background-color 0.3s;
+                        width: 100%;
+                        box-sizing: border-box;
+
+                        &:hover {
+                            background-color: #1abc9c;
+                            color: $background-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+    }
+}
+

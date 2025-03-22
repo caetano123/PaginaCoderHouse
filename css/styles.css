@@ -1,0 +1,425 @@
+@charset "UTF-8";
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Sedgwick+Ave+Display&display=swap");
+/* Header */
+header {
+  padding: 0;
+  margin: 0;
+}
+header .fondoHeader {
+  background-color: #f5f5f5;
+  padding: 0;
+}
+header a img {
+  max-width: 175px;
+  height: 85px;
+}
+
+/* Navbar */
+.navbar.fixed-top {
+  width: 100%;
+  top: 0;
+  z-index: 1030;
+}
+
+/* Navegación */
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 500;
+}
+nav ul li a:hover {
+  color: #f0a500;
+}
+
+.footerDiv {
+  padding: 5px 0;
+  text-align: unset;
+}
+
+footer .copy,
+.textCenter {
+  text-align: center;
+}
+
+footer .contactoFooter {
+  text-align: right;
+  padding-right: 10px;
+}
+
+/* Flexbox para la sección de categorías */
+.categorias {
+  margin-bottom: 50px;
+}
+.categorias .categorias-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.categorias .categoria-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.categorias .categoria-item:hover {
+  transform: scale(1.05);
+}
+.categorias .categoria-item a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  /* Asegura que esté por encima */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.categorias .categoria-imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
+}
+.categorias .categoria-texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  font-family: "Rock Salt", serif;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.recomendados {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+}
+.recomendados .recomendado-item {
+  display: block;
+}
+.recomendados .recomendado-item .categoria-imagen {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.recomendados .recomendado-item .categoria-imagen:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 1200px) {
+  .categoria-item {
+    height: 250px;
+  }
+  .categoria-item .categoria-imagen {
+    object-fit: cover;
+  }
+  .categoria-item .categoria-texto {
+    font-size: 1.3rem;
+    padding: 10px 15px;
+  }
+}
+@media (max-width: 768px) {
+  .banner .carousel-item img {
+    width: 100vw;
+    height: 60vh;
+    object-fit: cover;
+  }
+  .categoria-texto {
+    font-size: 1.1rem;
+  }
+  .categoria-imagen {
+    height: 140px;
+  }
+  .container .row .col-md-3 .sidebar {
+    position: relative;
+    width: 100% !important;
+    height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+    border-right: none;
+    border-top: 1px solid #ddd;
+    padding: 15px;
+    display: flex;
+    flex-direction: column; /* Permite al contenido del sidebar estar en una columna */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    order: 100;
+  }
+  .container .row .col-md-3 .sidebar .menu {
+    display: flex;
+    flex-direction: column; /* Apila los elementos del menú verticalmente */
+    gap: 10px;
+    align-items: center; /* Centra los enlaces horizontalmente */
+  }
+  .container .row .col-md-3 .sidebar .menu a {
+    text-align: center;
+    display: block;
+    width: 100%; /* Asegura que cada enlace ocupe el ancho completo */
+  }
+  .envio-opciones {
+    align-items: center;
+  }
+}
+@media (max-width: 576px) {
+  .categoria-texto {
+    font-size: 1rem;
+    padding: 3px 8px;
+  }
+  .categoria-imagen {
+    height: 120px;
+  }
+  .table td, .table th {
+    padding: 8px;
+  }
+  .table th {
+    font-size: 14px;
+  }
+  .table td {
+    font-size: 12px;
+  }
+  .table .d-flex {
+    flex-wrap: wrap;
+  }
+  .table img {
+    width: 40px;
+  }
+  .table .me-2 {
+    margin-right: 5px;
+  }
+  .table input[type=number] {
+    width: 80px;
+  }
+}
+/* Estilos generales */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FFFFFF;
+  color: rgb(0, 0, 0);
+  font-family: "Karla", serif;
+  font-weight: 500;
+  font-style: normal;
+  padding-top: 85px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 18px;
+}
+a:hover {
+  color: #f0a500;
+}
+
+/* Títulos */
+h1 {
+  font-family: "Rock Salt", serif;
+  font-weight: 400;
+}
+
+h2 {
+  color: #333;
+}
+
+/* Estilos para el banner */
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  position: relative;
+  overflow: hidden;
+  /* Estilos para el carrusel */
+}
+.banner .carousel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* Estilos para los botones de navegación */
+}
+.banner .carousel .carousel-inner {
+  height: 100%;
+}
+.banner .carousel .carousel-item {
+  height: 100%;
+}
+.banner .carousel .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.banner .carousel .carousel-control-prev,
+.banner .carousel .carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 50%;
+  z-index: 20;
+}
+.banner .carousel .carousel-control-prev.carousel-control-prev,
+.banner .carousel .carousel-control-next.carousel-control-prev {
+  left: 10px;
+}
+.banner .carousel .carousel-control-prev.carousel-control-next,
+.banner .carousel .carousel-control-next.carousel-control-next {
+  right: 10px;
+}
+
+/* Margen inferior para carouseles */
+.carouseles {
+  margin-bottom: 50px;
+}
+
+.recomendados-carousel .carousel-control-prev,
+.recomendados-carousel .carousel-control-next {
+  width: 5%;
+  border: none;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #FFFFFF;
+}
+.recomendados-carousel .carousel-control-prev {
+  left: -5%;
+}
+.recomendados-carousel .carousel-control-next {
+  right: -5%;
+}
+.recomendados-carousel .carousel-control-prev-icon,
+.recomendados-carousel .carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.unavailable {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title,
+.card-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*Carrito*/
+.linea {
+  border: 0;
+  height: 2px;
+  background-color: #333;
+  margin: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/*Form Ayuda estilo*/
+.form-color {
+  background-color: #FFFFFF;
+}
+
+/* Estilos aplicados solo en envíos */
+.mapa-section {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.mapa-section .mapa-contenedor {
+  width: 80%;
+  max-width: 1000px;
+}
+.mapa-section .mapa-contenedor .mapa {
+  width: 100%;
+  height: 500px;
+  border: 0;
+  border-radius: 8px;
+}
+
+.container .row .col-md-3 .sidebar {
+  justify-content: start;
+  width: 250px;
+  background-color: #FFFFFF;
+  padding: 20px;
+  height: 100vh;
+  border-right: 1px solid #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.container .row .col-md-3 .sidebar h2 {
+  margin-bottom: 15px;
+  text-align: left;
+}
+.container .row .col-md-3 .sidebar .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.container .row .col-md-3 .sidebar .menu a {
+  display: block;
+  text-decoration: none;
+  padding: 12px 20px;
+  color: #333;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  width: 100%;
+  box-sizing: border-box;
+}
+.container .row .col-md-3 .sidebar .menu a:hover {
+  background-color: #1abc9c;
+  color: #FFFFFF;
+}
+.container .row main {
+  flex: 1;
+  padding: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */

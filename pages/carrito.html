@@ -15,7 +15,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
   <!-- aca link con css -->
-  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
 
   <title>Carrito</title>
 </head>
@@ -75,14 +75,85 @@
   </header>
 
   <main>
-    <h1 class="mt-3">Carrito</h1>
+    <h1 class="mt-5">Carrito</h1>
     <hr class="linea">
-    <section class="container">
-      <h2>Producto Precio Cantidad Subtotal</h2>
-    </section>
-
-
+  
+    <div class="container mt-4">
+      <div class="row">
+        <!-- Columna para la tabla -->
+        <div class="col-12 col-lg-8">
+          <div class="table-responsive">
+            <table class="table align-middle text-center">
+              <thead class="table-light">
+                <tr>
+                  <th class="border">Producto</th>
+                  <th class="border">Precio</th>
+                  <th class="border">Cantidad</th>
+                  <th class="border">Subtotal</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="d-flex align-items-center">
+                    <!-- Botón para eliminar -->
+                    <button class="btn btn-outline-danger me-2 p-1">
+                      <i class="fa-solid fa-xmark"></i>
+                    </button>
+                    <img src="../assets/img/ropaimg/Canguro-Nergo-Jean.jpg" alt="Canguro Negro" class="me-2" width="50">
+                    <span>EXTREME JEAN - M</span>
+                  </td>
+                  <td>
+                    <del class="text-muted">$2.690,00</del> <br>
+                    <span class="fw-bold">$2.286,50</span>
+                  </td>
+                  <td>
+                    <input type="number" value="1" min="1" class="form-control w-50 mx-auto">
+                  </td>
+                  <td>
+                    <span class="fw-bold">$2.286,50</span> <br>
+                    <span class="text-success">Has ahorrado $403,50</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+  
+        <!-- Columna para el resumen de totales -->
+        <div class="col-12 col-lg-4">
+          <div class="card p-3">
+            <h5 class="fw-bold">TOTALES DEL CARRITO</h5>
+            <hr>
+            <p class="d-flex justify-content-between">
+              <span>Subtotal</span> <span>$2.286,50</span>
+            </p>
+            <p><strong>Envío</strong></p>
+            <div class="form-check mb-2">
+              <input class="form-check-input border-secondary" type="radio" name="envio" checked>
+              <label class="form-check-label">Sucursal DAC (se abona al retirar)</label>
+            </div>
+            <div class="form-check mb-2">
+              <input class="form-check-input border-secondary" type="radio" name="envio">
+              <label class="form-check-label">Domicilio vía DAC (se abona al retirar)</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input border-secondary" type="radio" name="envio">
+              <label class="form-check-label">Retiro en local (Av. 18 de Julio 1268)</label>
+            </div>
+            <p>Enviar a <strong>Canelones</strong></p>
+            <a href="#" class="text-decoration-underline">Cambiar dirección</a>
+            <hr>
+            <p class="d-flex justify-content-between">
+              <span>Total</span> <span>$2.286,50</span>
+            </p>
+            <p class="text-success">Has ahorrado $403,50</p>
+            <button class="btn btn-success w-100">CONTINUAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
+  
 
   <div class="container footerDiv">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
