@@ -17,6 +17,10 @@ Este es un proyecto de una tienda de ropa online, donde los usuarios pueden nave
   - CSS3
   - JavaScript
   - Bootstrap 5 (para el diseño responsive)
+ 
+## Deploys
+Vercel: https://pagina-coder-house.vercel.app/pages/tienda.html
+GitHub Pages: https://caetano123.github.io/PaginaCoderHouse/
 
 ## Instalación
 
