@@ -2,7 +2,10 @@
 <html lang="en">
 
 <head>
+  <meta name="description" content="Revisa los productos que has agregado a tu carrito y finaliza tu compra fácilmente. Ropa urbana de calidad al mejor precio.">
   <meta charset="UTF-8" />
+  <meta name="robots" content="noindex, nofollow">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- favicon -->
   <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon" />
@@ -17,7 +20,7 @@
   <!-- aca link con css -->
   <link rel="stylesheet" href="../css/styles.css" />
 
-  <title>Carrito</title>
+  <title>Carrito | Facha Streetwear</title>
 </head>
 
 <body>
@@ -32,7 +35,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse " id="navbarScroll">
-          <ul class="navbar-nav mx-auto me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <ul class="navbar-nav mx-auto me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
             </li>
@@ -77,8 +80,10 @@
   <main>
     <h1 class="mt-5">Carrito</h1>
     <hr class="linea">
+
+    <p id="carrito-vacio" class="carrito-vacio ms-3">Tu carrito esta vacío <i class="fa-solid fa-face-sad-tear"></i></p>
   
-    <div class="container mt-4">
+    <div id="carrito-tabla" class="container mt-4 disabled">
       <div class="row">
         <!-- Columna para la tabla -->
         <div class="col-12 col-lg-8">
@@ -92,41 +97,19 @@
                   <th class="border">Subtotal</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
-                  <td class="d-flex align-items-center">
-                    <!-- Botón para eliminar -->
-                    <button class="btn btn-outline-danger me-2 p-1">
-                      <i class="fa-solid fa-xmark"></i>
-                    </button>
-                    <img src="../assets/img/ropaimg/Canguro-Nergo-Jean.jpg" alt="Canguro Negro" class="me-2" width="50">
-                    <span>EXTREME JEAN - M</span>
-                  </td>
-                  <td>
-                    <del class="text-muted">$2.690,00</del> <br>
-                    <span class="fw-bold">$2.286,50</span>
-                  </td>
-                  <td>
-                    <input type="number" value="1" min="1" class="form-control w-50 mx-auto">
-                  </td>
-                  <td>
-                    <span class="fw-bold">$2.286,50</span> <br>
-                    <span class="text-success">Has ahorrado $403,50</span>
-                  </td>
-                </tr>
+              <tbody id="carrito-productos">
+                <!--Se genera con JS-->
               </tbody>
             </table>
           </div>
         </div>
   
         <!-- Columna para el resumen de totales -->
-        <div class="col-12 col-lg-4">
+        <div id="carrito-acciones" class="col-12 col-lg-4">
           <div class="card p-3">
             <h5 class="fw-bold">TOTALES DEL CARRITO</h5>
             <hr>
-            <p class="d-flex justify-content-between">
-              <span>Subtotal</span> <span>$2.286,50</span>
-            </p>
+           
             <p><strong>Envío</strong></p>
             <div class="form-check mb-2">
               <input class="form-check-input border-secondary" type="radio" name="envio" checked>
@@ -144,14 +127,18 @@
             <a href="#" class="text-decoration-underline">Cambiar dirección</a>
             <hr>
             <p class="d-flex justify-content-between">
-              <span>Total</span> <span>$2.286,50</span>
+              <span>Total</span> <span id="total">$2.286,50</span>
             </p>
             <p class="text-success">Has ahorrado $403,50</p>
-            <button class="btn btn-success w-100">CONTINUAR</button>
+            <button id="boton-comprar" class="btn btn-success w-100">CONTINUAR</button>
           </div>
         </div>
+
+        
+
       </div>
     </div>
+    <p id="carrito-comprado" class="disabled ms-3">Muchas gracias por tu compra. <i class="fa-solid fa-face-smile"></i></p>
   </main>
   
 
@@ -179,6 +166,8 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
    crossorigin="anonymous"></script>
+
+   <script src="../js/carrito.js"></script>
 
 </body>
 

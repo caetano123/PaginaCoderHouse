@@ -3,7 +3,13 @@
 
 <head>
   <meta charset="UTF-8" />
+
+  <!-- Aquí iría la meta description generada dinámicamente con JS -->
+  <meta name="description" id="meta-description" content="Ropa urbana de alta calidad para [hombre/mujer], disponible en varias tallas y colores. Envíos rápidos y atención personalizada. ¡Encuentra tu estilo hoy mismo!.">
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow">
+
   <!-- favicon -->
   <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon" />
 
@@ -18,7 +24,7 @@
   <link rel="stylesheet" href="../css/styles.css" />
 
 
-  <title>Ayuda</title>
+  <title>Detalles | Facha Streetwear</title>
 </head>
 
 <body>
@@ -33,7 +39,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse " id="navbarScroll">
-          <ul class="navbar-nav mx-auto me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <ul class="navbar-nav mx-auto me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
             </li>
@@ -74,23 +80,49 @@
       </div>
     </nav>
   </header>
+ 
 
   <main>  
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="card">
-                <img src="" alt="Imagen del producto" class="card-img-top producto-imagen">
-                <div class="card-body">
-                  <h5 class="card-title producto-titulo"></h5>
-                  <p class="card-text producto-descripcion"></p>
-                  <p class="card-text producto-precio"></p>
-                  <div class="producto-tallas"></div>
-                </div>
+    <div class="container py-4">
+      <div class="row">
+          <div class="col-12 col-md-6">
+              <!-- Imagen del producto -->
+              <div class="card mb-4">
+                  <img id="producto-imagen" class="card-img-top producto-imagen">
               </div>
-            </div>
           </div>
-        </div>
+          <div class="col-12 col-md-6">
+              <!-- Información del producto -->
+              <div class="card info-producto">
+                  <div class="card-body">
+                      <h1 id="producto-titulo" class="producto-titulo">BERMADA BAGGI NEGRA</h1>
+                      
+                      <div class="mb-3">
+                          <span id="producto-tallas"></span>
+                      </div>
+                      
+                      <p id="producto-precio" class="producto-precio"></p>
+                      
+                      <p id="producto-descripcion" class="card-text mb-4 text-wrap"></p>
+                      
+                      <div class="divider"></div>
+                      
+                      <div class="mb-3">
+                          <button id="boton-añadir-carrito" class="btn btn-success w-100">AÑADIR AL CARRITO</button>
+                      </div>
+                      
+                      <div class="divider"></div>
+         
+                      <div id="producto-categorias" class="mt-4">
+                          <span class="badge badge-category rounded-pill bg-light text-dark p-2">#EL DROP DE TUS SUEÑOS</span>
+                          <span class="badge badge-category rounded-pill bg-light text-dark p-2">#HASTA 30% OFF*</span>
+                          <span id="producto-categoria" class="badge badge-category rounded-pill bg-light text-dark p-2">BERMADAS BAGGY</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 
   </main>
 
@@ -121,7 +153,7 @@
  crossorigin="anonymous"></script>
 
  <!--Script Tienda-->
- <script src="../js/detalles.js"></script> 
+ <script src="../js/catalogo.js"></script> 
 
 </body>
 

@@ -38,7 +38,7 @@
             .sidebar {
               position: relative;
               width: 100% !important;
-              height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+              height: auto !important; /* Asegura que ocupe toda la altura de la pantalla */
               border-right: none;
               border-top: 1px solid #ddd;
               padding: 15px;
