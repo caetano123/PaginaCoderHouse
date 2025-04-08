@@ -78,7 +78,7 @@ const productos = [
   },
   {
     id: 8,
-    imagen: "../assets/img/ropaimg/deportivo-negro-scarryjpg.jpg",
+    imagen: "../assets/img/ropaimg/Deportivo-negro-scarryjpg.jpg",
     alt: "Pantalón Deportivo Negro Scarry",
     titulo: "Pantalón Deportivo Negro Scarry",
     descripcion:
